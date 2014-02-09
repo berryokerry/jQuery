@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>
+<html>
+<head>
+<title>My Test Page</title>
+
+<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+  var strongContent = $('strong') .text();
+  var pContent = $('p') .text();
+  
+  $('strong') .html(pContent);
+  $('p') .text (strongContent);
+	
+});
+</script>
+
+</head>
+<body>
+<strong>This is the code in the <em>STRONG</em> element</strong>
+<p>This is the code in the <em>P</em> element
+<img src="images/gardening.1.jpg" alt="image1" /></p>
+</body>
+</html>
